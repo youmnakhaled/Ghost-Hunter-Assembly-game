@@ -1,0 +1,338 @@
+Public DrawTitle
+.model medium
+.data 
+
+title1 db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,8,0fh,0fh,0fh,8,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+db 0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,7,8,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,8,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,8,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,7,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,8,8,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,8,8,8,7,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,8,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,7,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,8,0fh,0fh,0fh,0fh,8,8,8,8,8,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,8,8,8,8,8,8,8,8,8,8,7,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0
+db 7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0
+db 0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,8,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,8,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0,0,0,0,0,0,0
+db 0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0
+db 0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,7,7,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0
+db 0,0,0
+db 0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,8,7,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0
+db 0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,8,7,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,8,0,0,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,8,0,0
+db 0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,7,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,7,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,7,8,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0
+db 8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0
+db 0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,8,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,8,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,8,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,8,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,8,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,8,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 8,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0
+db 8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0,0
+db 0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0
+db 0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0
+db 0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0
+db 0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,8,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,7,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,7,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0
+db 0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0fh,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0
+db 0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0fh
+db 0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0
+db 0,0,0,8,8,8,8,8,8,8,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0fh,0fh,0,0,0,0,0,0,0,0,0,7,8,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,8,8,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,8,8,8,8,8
+db 8,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0,0,0,0,0,0fh,0fh,0fh,0,0,0,0,0,0,0,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,7,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0fh,0fh
+db 0fh,0fh,0fh,0fh,0fh,8,8,0,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7
+db 7,7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,7,7,7,0,0,0,0,0,0,0fh,0fh,0,0,0,0,0,0,0,0,8,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh,0fh
+db 0fh,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+
+
+.CODE
+DrawTitle  PROC 
+      MOV AX, @DATA
+	  MOV DS,AX  
+	  
+	  mov cx,150 
+	  mov si,0 
+	  mov dx,150
+loop1: 
+	               
+	  mov al,title1[si]         ;Pixel color 
+	  mov ah,0ch       ;Draw Pixel Command 
+	  mov bx,0
+	  int 10h 
+	  inc cx
+	  inc si
+	  ; mov di,Xblue
+	  ; add di,40
+	  cmp cx,451
+	  jz nextrow
+	  cmp si,15050    ; 301*50 pixels
+	  jle loop1
+	  jmp endd
+	  
+	  nextrow:
+	  inc dx
+	  mov cx,150
+	  jmp loop1
+
+endd:
+	  
+	  
+RET
+DrawTitle ENDP
+END
